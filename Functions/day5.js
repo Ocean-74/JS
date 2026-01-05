@@ -1,12 +1,14 @@
 //reusable calculator
 function calculate(a,b,operator){
     if(operator==="+") return a + b ;
-    if(operator==="+") return a - b ;
-    if(operator==="+") return a * b ;
-    if(operator==="+") return b!== 0? a/b : "Cannot divided by 0";
+    if(operator==="-") return a - b ;
+    if(operator==="*") return a * b ;
+    if(operator==="/") return b!== 0? a/b : "Cannot divided by 0";
 }
 
-console.log(calculate(4,5,"+"));
+console.log(calculate(72,12,"+"));
+console.log(calculate(72,12,"-"));
+console.log(calculate(72,12,"*"));
 console.log(calculate(72,12,"/"));
 // nested fuction
 // number is even
