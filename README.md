@@ -10,4 +10,4 @@ Each folder includes day-wise practice files.
 2. Functions - day4 , day5
 3. Loops - day6
 4. Arrays - day7
-5. Objects - day8 to day12
+5. Objects - day8 to day13
