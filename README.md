@@ -11,3 +11,4 @@ Each folder includes day-wise practice files.
 3. Loops - day6
 4. Arrays - day7
 5. Objects - day8 to day14
+6. Chaining Methods - day 15 , day 16
