@@ -12,4 +12,4 @@ Each folder includes day-wise practice files.
 4. Arrays - day7
 5. Objects - day8 to day14
 6. Chaining Methods - day 15 to day 17
-7. Data Transformation - day 18 to day 21
+7. Data Transformation - day 18 to day 22
