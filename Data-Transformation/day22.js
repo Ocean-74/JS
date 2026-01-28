@@ -48,3 +48,43 @@ function updateUserAge(users, id, newAge) {
 }
 
 console.log(updateUserAge(users , 4 ,20));
+
+function toggleLogin(users, id){
+ let userFound = false;
+
+  const updatedUsers = users.map(user => {
+    if (user.id === id) {
+      userFound = true;
+
+      return {
+        ...user,
+        login: {
+          isLoggedIn : user.isLoggedIn? false : true
+        }
+      };
+    }
+    return user;
+  });
+
+  return userFound ? updatedUsers : "User Not Found"; 
+}
+
+console.log(toggleLogin(users, 2));
+
+function getSummary(){
+  let summary = users.reduce((acc,user)=>{
+  acc.totalUsers++;
+  if(user.profile.age >=18){
+    acc.adults++}else{
+    acc.minors++}
+  if(user.login.isLoggedIn===true){
+    acc.loggedIn++
+  }
+  if(user.profile.age >=18 && user.login.isLoggedIn===true){
+    acc.loggedInAdults++}
+    return acc;
+  },{ totalUsers:0, adults:0,  minors:0,  loggedIn:0, loggedInAdults:0})
+  return summary;
+}
+
+console.log(getSummary());
